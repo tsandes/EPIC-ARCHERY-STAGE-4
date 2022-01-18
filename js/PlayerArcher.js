@@ -12,12 +12,13 @@ class PlayerArcher {
 
     World.add(world, this.body);
 
-    Matter.Body.setAngle(this.body, -90); 
+    Matter.Body.setAngle(this.body, -90);
   }
 
   display() {
     var pos = this.body.position;
     var angle = this.body.angle;
+    console.log(angle)
 
     if (keyIsDown(DOWN_ARROW) && angle < -73 ) {
       angle += 1;
